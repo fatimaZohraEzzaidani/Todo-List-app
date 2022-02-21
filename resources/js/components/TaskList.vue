@@ -1,18 +1,23 @@
 <template>
     
-<section style="background-color: #eee;">
+<section class="bdy" style="background-color: #eee;">
+
+
   <div class="container py-5 h-100">
+       
+              <router-link to="/">
+                <i class="mdi mdi-home text-light" data-mdb-toggle="tooltip" title="Home" style="font-size:20px"></i>
+              </router-link>
+         
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-12 col-xl-10">
 
-        <div class="card">
-          <div class="card-header p-3">
+        <div class="card bg-light">
+           <div class="card-header p-3">
             <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Task List</h5>
           </div>
           <div class="card-body" data-mdb-perfect-scrollbar="true">
           
-  
-  
 
   <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Task description" aria-label="Task description" aria-describedby="button-addon2">
@@ -37,9 +42,9 @@
               <tbody>
                 <tr class="fw-normal">
                   <th>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" class="shadow-1-strong rounded-circle" alt="avatar 1"
-                      style="width: 55px; height: auto;">
-                    <span class="ms-2">Alice Mayer</span>
+                    <img src="/images/people/259624793_118600630627679_1218701727674921844_n.jpg" class="shadow-1-strong rounded-circle" alt="avatar 1"
+                      style="width: 55px; height: 55px;">
+                    <span class="ms-2">Fati.Zid</span>
                   </th>
                   <td class="align-middle">
                     <span >Call Sam For payments</span >
@@ -62,9 +67,9 @@
                   <td class="align-middle">
                     <h6 class="mb-0"><span class="badge bg-success">Low priority</span></h6>
                   </td>
-                  <td class="align-middle">
-                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
-                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  <td class="align-middle" style="font-size:20px">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="mdi mdi-check"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="mdi mdi-delete  text-danger"></i></a>
                   </td>
                 </tr>
                 <tr class="fw-normal">
@@ -77,9 +82,9 @@
                   <td class="align-middle">
                     <h6 class="mb-0"><span class="badge bg-warning">Middle priority</span></h6>
                   </td>
-                  <td class="align-middle">
-                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
-                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  <td class="align-middle" style="font-size:20px">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="mdi mdi-check"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="mdi mdi-delete  text-danger"></i></a>
                   </td>
                 </tr>
                 <tr class="fw-normal">
@@ -92,9 +97,9 @@
                   <td class="align-middle">
                     <h6 class="mb-0"><span class="badge bg-danger">High priority</span></h6>
                   </td>
-                  <td class="align-middle">
-                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
-                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  <td class="align-middle" style="font-size:20px">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="mdi mdi-check"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="mdi mdi-delete  text-danger"></i></a>
                   </td>
                 </tr>
                 <tr class="fw-normal">
@@ -107,9 +112,9 @@
                   <td class="align-middle">
                     <h6 class="mb-0"><span class="badge bg-success">Low priority</span></h6>
                   </td>
-                  <td class="align-middle">
-                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
-                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  <td class="align-middle" style="font-size:20px">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="mdi mdi-check"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="mdi mdi-delete  text-danger"></i></a>
                   </td>
                 </tr>
                 <tr class="fw-normal">
@@ -122,9 +127,9 @@
                   <td class="border-0 align-middle">
                     <h6 class="mb-0"><span class="badge bg-warning">Medium priority</span></h6>
                   </td>
-                  <td class="border-0 align-middle">
-                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
-                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-warning"></i></a>
+                  <td class="align-middle" style="font-size:20px">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="mdi mdi-check"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="mdi mdi-delete  text-danger"></i></a>
                   </td>
                 </tr>
               </tbody>
@@ -150,3 +155,14 @@
         }
     }
 </script>
+
+
+<style scoped>
+.bdy{
+    /* height: 100vh !important; */
+    background-image: url('/images/todohome.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
