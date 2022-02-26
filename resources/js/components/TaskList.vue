@@ -174,13 +174,8 @@
  */
 
 body {
-  /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
-    /* height: 100vh;
-    background-image: url('/images/todohome.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 .bdy{
