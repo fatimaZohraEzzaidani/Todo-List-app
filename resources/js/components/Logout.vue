@@ -1,5 +1,6 @@
 <template>
-<div class="bdy d-flex h-100 text-center text-white bg-dark">
+ <div class="bdy d-flex h-100 text-center text-white bg-dark">
+     <loader v-if="getLoader"></loader>
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
@@ -13,13 +14,7 @@
   </header>
 
   <main class="px-3">
-    <h1>Create a todo list</h1>
-    <p class="lead"> Keep track of your progress and be more productive with your time. </p>
-    <p class="lead">
-        <router-link to="login">
-           <p class="btn btn-lg btn-info rounded-circle">Get started</p>
-        </router-link>  
-    </p>
+    <h1>Logging Out</h1>
   </main>
 
   <footer class="mt-auto text-white-50">
@@ -29,17 +24,26 @@
 </div>
 </template>
 
-
 <script>
+
 export default {
-    props:{
-       text:{
-          required:false,
-          type:   String,
-          default: 'Loading'
-       }
+    computed:{
+     getLoader() {
+       return this.$store.getters.getLoader
+     } 
     },
+
+    created(){
+        this.$store.dispatch('logout')
+        .then(response => {  
+             this.$router.push({ name: 'Home'});
+        })
+        .catch(error => {
+              console.log(error)
+        })
+    }
 }
+
 </script>
 
 
