@@ -13,6 +13,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
+import store from "./Store";
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -27,6 +29,10 @@ Vue.use(VueRouter);
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+//Vue.component('logout-component', require('./components/Logout.vue').default);
+Vue.component('loader', require('./components/Loader.vue').default);
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -38,5 +44,6 @@ const router = new VueRouter(routes);
 
 const app = new Vue({
     el: '#app',
-    router
+    router,
+    store
 });
